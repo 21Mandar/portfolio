@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mandar Arun | Data & AI Engineer</title>
+<meta name="description" content="Mandar Arun: MS Data Science student at Northeastern building ML, RAG and agentic AI systems, with data engineering experience at Caterpillar.">
+<style>
+:root{--bg1:#0a0510;--bg2:#2a0f4d;--fg:#f3eefb;--muted:#b9aed0;--card:rgba(255,255,255,.05);--line:rgba(190,150,255,.22);--purple:#7c3aed;--lilac:#c4a3ff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--fg);font:17px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:linear-gradient(160deg,var(--bg2) 0%,#12061f 45%,var(--bg1) 100%) fixed;min-height:100vh}
+a{color:var(--lilac);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:12px;z-index:5;padding:0 12px}
+nav .wrap{display:flex;gap:22px;align-items:center;height:56px;overflow-x:auto;white-space:nowrap;border-radius:999px;background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(26px) saturate(180%);-webkit-backdrop-filter:blur(26px) saturate(180%);box-shadow:inset 0 1px 0 rgba(255,255,255,.38),inset 0 0 0 1px rgba(255,255,255,.07),inset 0 -1px 0 rgba(0,0,0,.45),0 14px 36px rgba(0,0,0,.45)}
+nav b{margin-right:auto;font-size:17px;white-space:nowrap;will-change:opacity,transform}
+.avatar,header.hero h1{will-change:opacity,transform}
+nav .wrap{position:relative;gap:6px}
+nav a{position:relative;z-index:1;color:var(--muted);font-size:14px;padding:7px 15px;border-radius:999px;transition:color .25s}
+nav a:hover{text-decoration:none;color:var(--fg)}
+nav a.active{color:#fff}
+.blob{position:absolute;top:50%;height:36px;margin-top:-18px;left:0;width:0;border-radius:999px;background:linear-gradient(145deg,rgba(255,255,255,.26),rgba(255,255,255,.1));border:1px solid rgba(255,255,255,.28);box-shadow:inset 0 1px 0 rgba(255,255,255,.45),inset 0 -1px 0 rgba(0,0,0,.3),0 4px 14px rgba(124,58,237,.35);opacity:0;transition:left .45s cubic-bezier(.3,1.35,.5,1),width .45s cubic-bezier(.3,1.35,.5,1),opacity .25s;pointer-events:none}
+section{scroll-margin-top:84px}
+.sg{font-size:20px;margin:22px 0 10px}
+.skrow{display:flex;flex-wrap:wrap;gap:10px}
+.skills{position:relative}
+.sk{position:relative;z-index:1;color:#fff;background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:6px 16px;font:13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;cursor:default;backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);box-shadow:inset 0 1px 0 rgba(255,255,255,.38),inset 0 -1px 0 rgba(0,0,0,.4),0 6px 16px rgba(0,0,0,.35);transition:transform .25s cubic-bezier(.3,1.5,.5,1)}
+.sel{position:absolute;z-index:0;left:0;top:0;width:0;height:0;border-radius:999px;pointer-events:none;opacity:0;background:linear-gradient(145deg,rgba(176,130,255,.55),rgba(124,58,237,.3));border:1px solid rgba(255,255,255,.4);box-shadow:inset 0 1px 0 rgba(255,255,255,.55),inset 0 -1px 0 rgba(0,0,0,.3),0 0 24px rgba(124,58,237,.7);transition:left .4s cubic-bezier(.3,1.35,.5,1),top .4s cubic-bezier(.3,1.35,.5,1),width .4s cubic-bezier(.3,1.35,.5,1),height .4s cubic-bezier(.3,1.35,.5,1),opacity .25s}
+.sk:hover,.sk:focus-visible,.sk.hot{transform:scale(1.2);z-index:3;outline:none}
+.tip{position:fixed;z-index:20;max-width:300px;padding:14px 16px;border-radius:18px;font-size:14px;line-height:1.5;color:var(--fg);background:linear-gradient(145deg,rgba(60,30,100,.92),rgba(18,8,32,.94));border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(26px) saturate(180%);-webkit-backdrop-filter:blur(26px) saturate(180%);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -1px 0 rgba(0,0,0,.45),0 16px 40px rgba(0,0,0,.55);opacity:0;pointer-events:none;transition:opacity .18s}
+.tip.show{opacity:1}
+.tip .u{display:block;margin-top:8px;color:var(--lilac)}
+
+.card{scroll-margin-top:84px}
+#projects .list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+#projects .card{display:flex;flex-direction:column;padding:24px 26px}
+#projects .card h3{font-size:clamp(21px,2.6vw,26px)}
+#projects .links{margin-top:auto}
+@media(max-width:760px){#projects .list{grid-template-columns:1fr}}
+
+
+header.hero{padding:96px 0 56px}
+h1{font-size:clamp(30px,6vw,52px);line-height:1.1;margin:0 0 18px;letter-spacing:.04em;text-transform:uppercase}
+.tag{font-size:21px;color:var(--muted);max-width:680px;margin:0}
+header.hero{display:flex;align-items:center;gap:36px}
+.avatar{width:176px;height:176px;flex:none;border-radius:50%;object-fit:cover;object-position:50% 50%;border:2px solid rgba(255,255,255,.4);box-shadow:0 0 0 7px rgba(124,58,237,.35),0 16px 44px rgba(0,0,0,.55)}
+.who{min-width:0}
+@media(max-width:620px){header.hero{flex-direction:column;align-items:flex-start;gap:24px}.avatar{width:148px;height:148px}}
+#circuit{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+section{padding:48px 0;border-top:1px solid var(--line)}
+h2{font-size:14px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:0 0 22px}
+.list{display:flex;flex-direction:column;gap:20px}
+.card{background:linear-gradient(145deg,rgba(255,255,255,.12),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.16);border-radius:26px;padding:28px 30px;backdrop-filter:blur(26px) saturate(180%);-webkit-backdrop-filter:blur(26px) saturate(180%);box-shadow:inset 0 1px 0 rgba(255,255,255,.38),inset 0 0 0 1px rgba(255,255,255,.07),inset 0 -1px 0 rgba(0,0,0,.45),0 14px 36px rgba(0,0,0,.45)}
+.card h3{margin:0 0 6px;font-size:clamp(24px,3.6vw,30px);line-height:1.2}
+.card p{margin:0 0 12px;color:var(--muted)}
+.card ul{margin:0 0 14px;padding-left:20px}
+.card li{margin-bottom:4px}
+ul.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px;padding:0;list-style:none}
+ul.chips li{background:#000;color:#fff;border:1.5px solid var(--purple);border-radius:999px;padding:3px 13px;font:13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;margin:0}
+.links{display:flex;gap:18px;font-size:15px}
+.job{display:grid;grid-template-columns:170px 1fr;gap:6px 26px;margin-bottom:28px}
+@media(max-width:620px){.job{grid-template-columns:1fr}}
+.job .when{color:var(--muted);font-size:15px}
+.job h3{margin:0;font-size:clamp(22px,3.4vw,28px);line-height:1.2}.job .org{color:var(--muted)}
+.job ul{margin:10px 0 0;padding-left:20px}
+.skills dt{font-weight:700;font-size:20px;margin-top:16px}.skills dd{margin:2px 0 0;color:var(--muted)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.btn{padding:11px 22px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.05));color:var(--fg);backdrop-filter:blur(26px) saturate(180%);-webkit-backdrop-filter:blur(26px) saturate(180%);box-shadow:inset 0 1px 0 rgba(255,255,255,.38),inset 0 0 0 1px rgba(255,255,255,.07),inset 0 -1px 0 rgba(0,0,0,.45),0 14px 36px rgba(0,0,0,.45)}
+.btn.primary{background:linear-gradient(145deg,#9d6bff,#6d28d9);border-color:rgba(255,255,255,.3);color:#fff}
+footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Mandar Arun</b><a href="#experience">Experience</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#beyond">Beyond Work</a><a href="#contact">Contact</a></div></nav>
+
+<main class="wrap">
+<header class="hero">
+  <img class="avatar" src="profile.jpg" width="560" height="560" alt="Portrait of Mandar Arun">
+  <div class="who"><h1>Mandar Arun</h1>
+  <p class="tag">MS Data Science student at Northeastern, building machine learning, RAG and agentic AI systems, with data engineering experience from Caterpillar. Based in Boston, MA.</p></div>
+</header>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="job">
+    <div class="when">Nov 2024 &ndash; Jul 2025</div>
+    <div><h3>Associate Data Engineer</h3><div class="org">Caterpillar Inc</div>
+      <ul>
+        <li>Built dashboards and ETL pipelines using Snowflake and Python.</li>
+        <li>Automated email workflows with Power Platforms.</li>
+        <li>Evaluated supplier quality and vendor onboarding.</li>
+      </ul></div>
+  </div>
+  <div class="job">
+    <div class="when">Jul 2024 &ndash; Sep 2024</div>
+    <div><h3>Associate Python Developer</h3><div class="org">Toyota Kirloskar Motor</div>
+      <ul>
+        <li>Developed a real-time computer vision verification system.</li>
+        <li>Built an image classification model robust across varying conditions.</li>
+        <li>Worked on improving sub-assembly throughput.</li>
+      </ul></div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="job">
+    <div class="when">Expected Apr 2027</div>
+    <div><h3>MS, Data Science</h3><div class="org">Northeastern University &middot; GPA 3.4</div>
+      <p style="margin:6px 0 0;color:var(--muted);font-size:15px">Coursework: Agentic AI, Machine Learning, Algorithms, NLP, Database Management Systems</p></div>
+  </div>
+  <div class="job">
+    <div class="when">Graduated Jul 2025</div>
+    <div><h3>BE, Mechanical Engineering</h3><div class="org">BMS College of Engineering &middot; GPA 3.6</div>
+      <p style="margin:6px 0 0;color:var(--muted);font-size:15px">Coursework: AI and ML for Mechanical Engineers, Mathematical Concepts using Python, Complex Analysis and Statistical Methods</p></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="list">
+
+    <article class="card">
+      <h3>Agentic RAG over SEC Filings</h3>
+      <p>An agent that answers questions about NVIDIA, AMD and Micron 10-K filings and checks whether its evidence is enough before it answers.</p>
+      <ul>
+        <li>Pinecone index over 9 filings, five retrieval strategies (dense, filtered, multi-query RRF, Cohere rerank, BM25 hybrid) and a LangGraph agent that retries up to three times.</li>
+        <li>A simpler retrieval-ladder agent beat the diagnosis agent 0.93 to 0.64 on 14 labeled questions (single run); I traced why and added a verdict policy, CI and a 34-question benchmark. Live on Render.</li>
+      </ul>
+      <ul class="chips"><li>Pinecone</li><li>Cohere Rerank</li><li>LangGraph</li><li>Gemini</li><li>BM25</li><li>GitHub Actions</li><li>Python</li><li>Render</li></ul>
+      <div class="links"><a href="https://github.com/21Mandar/Agentic_RAG_over_SEC_Filings">Code</a><a href="https://sec-filings-agent-pmtr.onrender.com">Live demo</a></div>
+    </article>
+
+    <article class="card">
+      <h3>Agentic Trip Planner</h3>
+      <p>A conversational trip-planning agent with memory that gives a source link for every recommendation.</p>
+      <ul>
+        <li>LangChain agent on Gemini with LangGraph memory and five tools: Open-Meteo, Ticketmaster, and Tavily for attractions, restaurants and transit.</li>
+        <li>Returns a sourced plan and a structured JSON itinerary, never invents hours or prices (unknown stays unknown), and is live on Render.</li>
+      </ul>
+      <ul class="chips"><li>LangChain</li><li>LangGraph</li><li>Gemini</li><li>Tool use</li><li>Structured output</li><li>Gradio</li><li>Python</li><li>Render</li></ul>
+      <div class="links"><a href="https://github.com/21Mandar/Agentic_Trip_Planner">Code</a><a href="https://mandar-dada1-trip-planner.onrender.com/">Live demo</a></div>
+    </article>
+
+    <article class="card">
+      <h3>PaperPilot</h3>
+      <p>RAG document Q&amp;A with an agentic retrieval mode.</p>
+      <ul>
+        <li>sentence-transformers + FAISS retrieval, a local Qwen2.5 model, and an optional Claude API tool-use loop that re-searches and verifies citations.</li>
+        <li>Recall@3 of 1.00 at about 31 ms median retrieval latency; a few-shot example lifted the citation rate from 0% to 100%. CI runs 17 tests; live on Hugging Face Spaces.</li>
+      </ul>
+      <ul class="chips"><li>FAISS</li><li>Claude API</li><li>Streamlit</li><li>Docker</li><li>GitHub Actions</li></ul>
+      <div class="links"><a href="https://github.com/21Mandar/PaperPilot">Code</a></div>
+    </article>
+
+    <article class="card">
+      <h3>WeatherSense</h3>
+      <p>Stress-testing YOLOv8 object detection under adverse weather.</p>
+      <ul>
+        <li>390K inferences: 3 YOLOv8 sizes &times; 13 synthetic weather conditions &times; 10K BDD100K images.</li>
+        <li>Accuracy dropped about 95% at night. Served with FastAPI and Docker, live on Hugging Face Spaces.</li>
+      </ul>
+      <ul class="chips"><li>YOLOv8</li><li>PyTorch</li><li>OpenCV</li><li>FastAPI</li><li>Docker</li></ul>
+      <div class="links"><a href="https://github.com/21Mandar/WeatherSense">Code</a></div>
+    </article>
+
+    <article class="card">
+      <h3>Financial Fraud Detection</h3>
+      <p>Two-stage fraud pipeline on 590K+ e-commerce transactions (team project, CS 6140).</p>
+      <ul>
+        <li>Stage 1 predicts each transaction&rsquo;s expected amount; its residual feeds Stage 2 classifiers (Logistic Regression, Random Forest, DNN, XGBoost).</li>
+        <li>XGBoost was best at 0.945 AUC-ROC (0.948 with the anomaly feature, a small +0.0036 average gain); SHAP explains predictions.</li>
+      </ul>
+      <ul class="chips"><li>XGBoost</li><li>PyTorch</li><li>SHAP</li><li>scikit-learn</li></ul>
+      <div class="links"><a href="https://github.com/21Mandar/Financial-Fraud-Detection">Code</a></div>
+    </article>
+
+    <article class="card">
+      <h3>Dot Ball Pressure Analysis in T20 Cricket</h3>
+      <p>Unsupervised player profiling from ball-by-ball data.</p>
+      <ul>
+        <li>K-means (K=5) with PCA over 1.5M+ ball-by-ball records from 5,400+ matches, using a custom Pressure Tolerance Score.</li>
+        <li>Sorted 900+ players into archetypes and shipped the results as a Streamlit app.</li>
+      </ul>
+      <ul class="chips"><li>K-means</li><li>PCA</li><li>Streamlit</li><li>pandas</li></ul>
+      <div class="links"><a href="https://github.com/21Mandar/Dot-ball-pressure-analysis-in-T20-cricket">Code</a></div>
+    </article>
+
+    <article class="card">
+      <h3>ExpenseDatamart</h3>
+      <p>Polyglot-persistence data pipeline (CS 5200 practicum).</p>
+      <ul>
+        <li>Synthetic data into 3NF SQLite, MongoDB Atlas, then a MySQL Kimball star schema (six dimensions, a transaction fact and a monthly fact).</li>
+        <li>An R Markdown report runs SQL directly over the star schema for analytics.</li>
+      </ul>
+      <ul class="chips"><li>R</li><li>MySQL</li><li>MongoDB</li><li>SQLite</li><li>Star schema</li></ul>
+      <div class="links"><a href="https://github.com/21Mandar/ExpenseDatamart">Code</a></div>
+    </article>
+
+    <article class="card">
+      <h3>BRFSS Dashboard</h3>
+      <p>R Shiny dashboard over Behavioral Risk Factor Surveillance System public-health survey data.</p>
+      <ul>
+        <li>R Shiny with dplyr/tidyverse cleaning and filterable ggplot2 and plotly charts, including state-level views.</li>
+        <li>Showed wide variation in obesity prevalence across states and links between lifestyle, socioeconomic factors and chronic disease.</li>
+      </ul>
+      <ul class="chips"><li>R</li><li>Shiny</li><li>Public health data</li><li>ggplot2</li><li>plotly</li></ul>
+      <div class="links"><a href="https://github.com/21Mandar/BRFSS_Dasboard">Code</a></div>
+    </article>
+
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+<h3 class="sg">Languages &amp; data</h3>
+<div class="skrow"><button type="button" class="sk" data-desc="A general-purpose programming language popular for data science, automation and web back ends." data-use="Used in every project here, and in my work at Caterpillar and Toyota Kirloskar Motor.">Python</button><button type="button" class="sk" data-desc="A language built for statistics, data analysis and visualization." data-use="Used in ExpenseDatamart and the BRFSS Dashboard.">R</button><button type="button" class="sk" data-desc="The standard language for querying and managing data in relational databases." data-use="Used in ExpenseDatamart, and with Snowflake at Caterpillar.">SQL</button><button type="button" class="sk" data-desc="A cloud data warehouse for storing and analyzing large datasets." data-use="Used for dashboards and ETL at Caterpillar.">Snowflake</button><button type="button" class="sk" data-desc="An open-source relational database management system." data-use="Used for the star-schema datamart in ExpenseDatamart.">MySQL</button><button type="button" class="sk" data-desc="A lightweight, file-based relational database that needs no server." data-use="Used for the normalized 3NF database in ExpenseDatamart.">SQLite</button><button type="button" class="sk" data-desc="A document-oriented NoSQL database that stores data as JSON-like documents." data-use="Used for document storage in ExpenseDatamart (MongoDB Atlas).">MongoDB</button><button type="button" class="sk" data-desc="A Python library for working with tabular data." data-use="Used in the Dot Ball Pressure Analysis project.">pandas</button><button type="button" class="sk" data-desc="A Python library for fast numerical computing on arrays." data-use="">NumPy</button></div>
+<h3 class="sg">ML &amp; deep learning</h3>
+<div class="skrow"><button type="button" class="sk" data-desc="A deep learning framework for building and training neural networks." data-use="Used in WeatherSense and the neural network models in Financial Fraud Detection.">PyTorch</button><button type="button" class="sk" data-desc="Google&#x27;s open-source framework for building and deploying machine learning models." data-use="">TensorFlow</button><button type="button" class="sk" data-desc="A Python library of classic machine learning algorithms and tools." data-use="Used in Financial Fraud Detection.">scikit-learn</button><button type="button" class="sk" data-desc="A fast gradient-boosted decision tree library, strong on tabular data." data-use="Used in Financial Fraud Detection, where it was the best-performing model.">XGBoost</button><button type="button" class="sk" data-desc="A method for explaining which features drove a model&#x27;s predictions." data-use="Used in Financial Fraud Detection to interpret the model.">SHAP</button><button type="button" class="sk" data-desc="A library for image and video processing and computer vision." data-use="Used in WeatherSense.">OpenCV</button><button type="button" class="sk" data-desc="A hub for pretrained models, datasets and hosted ML demo apps." data-use="Used to deploy WeatherSense and PaperPilot on Hugging Face Spaces.">Hugging Face</button><button type="button" class="sk" data-desc="The field of teaching computers to understand images and video." data-use="Used in WeatherSense and in the real-time verification system at Toyota Kirloskar Motor.">Computer Vision</button><button type="button" class="sk" data-desc="Natural language processing: getting computers to work with human language." data-use="Learned in my NLP course at Northeastern, and applied in PaperPilot.">NLP</button></div>
+<h3 class="sg">LLMs &amp; agents</h3>
+<div class="skrow"><button type="button" class="sk" data-desc="AI systems where an LLM plans and takes actions with tools to reach a goal." data-use="Used in Agentic RAG over SEC Filings, Agentic Trip Planner and PaperPilot&#x27;s agentic mode. Also covered in my Northeastern coursework.">Agentic AI</button><button type="button" class="sk" data-desc="Retrieval-augmented generation: an LLM answers using documents fetched at query time." data-use="Used in PaperPilot and Agentic RAG over SEC Filings.">RAG</button><button type="button" class="sk" data-desc="A framework for building applications around LLMs, tools and memory." data-use="Used in Agentic Trip Planner and Agentic RAG over SEC Filings. Also learned in my Agentic AI course at Northeastern.">LangChain</button><button type="button" class="sk" data-desc="A library for building stateful, multi-step LLM agent workflows as graphs." data-use="Used for the agent graph in Agentic RAG over SEC Filings and the memory in Agentic Trip Planner. Also learned in my Agentic AI course.">LangGraph</button><button type="button" class="sk" data-desc="Letting an LLM request structured calls to external tools and APIs." data-use="Used in Agentic Trip Planner&#x27;s tools and PaperPilot&#x27;s Claude tool-use loop.">Function Calling</button><button type="button" class="sk" data-desc="Anthropic&#x27;s API for building applications on Claude models." data-use="Used in PaperPilot&#x27;s agentic retrieval mode.">Claude API</button><button type="button" class="sk" data-desc="A library that turns text into embeddings for semantic search." data-use="Used in PaperPilot for retrieval.">Sentence-transformers</button><button type="button" class="sk" data-desc="A managed vector database for fast similarity search over embeddings." data-use="Used for the filing index in Agentic RAG over SEC Filings.">Pinecone</button><button type="button" class="sk" data-desc="A reranking model that reorders retrieved passages by relevance to the query." data-use="Used in Agentic RAG over SEC Filings.">Cohere Rerank</button><button type="button" class="sk" data-desc="Google&#x27;s family of large language models, available through an API." data-use="Used as the chat model in Agentic RAG over SEC Filings and Agentic Trip Planner.">Gemini</button></div>
+<h3 class="sg">Tools &amp; deployment</h3>
+<div class="skrow"><button type="button" class="sk" data-desc="A modern Python framework for building fast web APIs." data-use="Used to serve WeatherSense.">FastAPI</button><button type="button" class="sk" data-desc="A Python framework for turning scripts into interactive web apps." data-use="Used in PaperPilot and the Dot Ball Pressure Analysis app.">Streamlit</button><button type="button" class="sk" data-desc="A tool for packaging apps into portable containers." data-use="Used in the WeatherSense and PaperPilot deployments.">Docker</button><button type="button" class="sk" data-desc="Amazon&#x27;s managed platform for building, training and deploying ML models." data-use="">AWS SageMaker</button><button type="button" class="sk" data-desc="A distributed version control system for tracking code changes." data-use="Used for version control across all my GitHub projects.">Git</button><button type="button" class="sk" data-desc="GitHub&#x27;s built-in automation for running tests and CI/CD pipelines." data-use="Used for PaperPilot&#x27;s CI pipeline, which runs a 17-test suite.">GitHub Actions</button><button type="button" class="sk" data-desc="A cloud platform for deploying web apps and services." data-use="Used to deploy Agentic RAG over SEC Filings and Agentic Trip Planner.">Render</button><button type="button" class="sk" data-desc="Microsoft&#x27;s business intelligence tool for dashboards and reports." data-use="">Power BI</button></div>
+</div>
+  <p style="color:var(--muted);margin-top:20px">Certification: Machine Learning Foundations (AWS Educate)</p>
+</section>
+
+<section id="beyond">
+  <h2>Beyond Work</h2>
+  <div class="list">
+    <article class="card">
+      <h3>National-Level Cricket Player</h3>
+      <p>I've represented my state at the national level in cricket. The sport also drives my data work, including my T20 dot-ball pressure analysis project.</p>
+    </article>
+    <article class="card">
+      <h3>Professional Motorcyclist</h3>
+      <p>Outside of tech, I'm a professional motorcyclist.</p>
+    </article>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p style="color:var(--muted)">I'm looking for internships in data engineering, data science, machine learning and AI engineering. The best way to reach me is email.</p>
+  <div class="btns">
+    <a class="btn primary" href="mailto:mandarba3k@gmail.com">mandarba3k@gmail.com</a>
+    <a class="btn" href="https://www.linkedin.com/in/mandar-arun/">LinkedIn</a>
+    <a class="btn" href="https://github.com/21Mandar">GitHub</a>
+    <a class="btn" href="Mandar_Arun_Resume.pdf">Resume (PDF)</a>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">&copy; 2026 Mandar Arun</div></footer>
+<script>
+(function(){
+  var wrap=document.querySelector('nav .wrap'),links=[].slice.call(wrap.querySelectorAll('a')),
+      blob=document.createElement('span'),lock=0,current=null;
+  blob.className='blob';wrap.appendChild(blob);
+  function setActive(id){
+    current=id;var el=null;
+    links.forEach(function(a){var on=a.getAttribute('href')==='#'+id;a.classList.toggle('active',on);if(on)el=a;});
+    if(!el){blob.style.opacity=0;return;}
+    blob.style.left=el.offsetLeft+'px';blob.style.width=el.offsetWidth+'px';blob.style.opacity=1;
+    var l=el.offsetLeft-(wrap.clientWidth-el.offsetWidth)/2;
+    if(wrap.scrollWidth>wrap.clientWidth)wrap.scrollTo({left:l,behavior:'smooth'});
+  }
+  function spy(){
+    if(Date.now()<lock)return;
+    var ids=links.map(function(a){return a.getAttribute('href').slice(1)}),pick=null;
+    ids.forEach(function(id){var e=document.getElementById(id);if(e&&e.getBoundingClientRect().top<=140)pick=id;});
+    if(window.innerHeight+window.scrollY>=document.body.scrollHeight-4)pick=ids[ids.length-1];
+    if(pick!==current)setActive(pick);
+  }
+  links.forEach(function(a){a.addEventListener('click',function(){lock=Date.now()+900;setActive(a.getAttribute('href').slice(1));});});
+  window.addEventListener('scroll',spy,{passive:true});
+  window.addEventListener('resize',function(){var c=current;current=null;setActive(c);});
+  spy();
+})();
+</script>
+<script>
+(function(){
+  var tip=document.createElement('div');tip.className='tip';tip.setAttribute('role','tooltip');document.body.appendChild(tip);
+  var cur=null,box=document.querySelector('.skills'),sel=document.createElement('span');
+  sel.className='sel';box.insertBefore(sel,box.firstChild);
+  function move(b){
+    var k=1.2,w=b.offsetWidth*k,h=b.offsetHeight*k;
+    sel.style.left=(b.offsetLeft-(w-b.offsetWidth)/2)+'px';sel.style.top=(b.offsetTop-(h-b.offsetHeight)/2)+'px';
+    sel.style.width=w+'px';sel.style.height=h+'px';sel.style.opacity=1;
+  }
+  box.addEventListener('mouseleave',function(){sel.style.opacity=0;});
+  function show(b){
+    hide();cur=b;b.classList.add('hot');move(b);
+    var d=document.createElement('span');d.textContent=b.dataset.desc;tip.textContent='';tip.appendChild(d);
+    if(b.dataset.use){var u=document.createElement('span');u.className='u';u.textContent=b.dataset.use;tip.appendChild(u);}
+    tip.classList.add('show');
+    var r=b.getBoundingClientRect(),t=tip.getBoundingClientRect(),m=10;
+    var x=Math.max(m,Math.min(r.left+r.width/2-t.width/2,innerWidth-t.width-m));
+    var y=r.top-t.height-14; if(y<m)y=r.bottom+14;
+    tip.style.left=x+'px';tip.style.top=y+'px';
+  }
+  function hide(){if(cur)cur.classList.remove('hot');cur=null;tip.classList.remove('show');}
+  [].forEach.call(document.querySelectorAll('.sk'),function(b){
+    b.addEventListener('mouseenter',function(){show(b)});b.addEventListener('mouseleave',hide);
+    b.addEventListener('focus',function(){show(b)});b.addEventListener('blur',function(){hide();setTimeout(function(){if(!document.activeElement||!document.activeElement.classList.contains('sk'))sel.style.opacity=0;},0);});
+    b.addEventListener('click',function(e){e.stopPropagation();cur===b?hide():show(b);});
+  });
+  document.addEventListener('click',hide);window.addEventListener('scroll',hide,{passive:true});
+})();
+</script>
+<script>
+(function(){
+  var cv=document.createElement('canvas');cv.id='circuit';cv.setAttribute('aria-hidden','true');
+  document.body.insertBefore(cv,document.body.firstChild);
+  var ctx=cv.getContext('2d'),P=0.55,vw,vh,dpr,traces=[],dirty=true,
+      reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches,
+      DIRS=[[1,0],[1,1],[0,1],[-1,1],[-1,0],[-1,-1],[0,-1],[1,-1]];
+  function rng(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+  function build(){
+    vw=innerWidth;vh=innerHeight;dpr=Math.min(window.devicePixelRatio||1,2);
+    cv.width=Math.round(vw*dpr);cv.height=Math.round(vh*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);
+    var docH=document.documentElement.scrollHeight,worldH=docH*P+vh,n=Math.round(worldH/vh*(vw<700?5:9)),r=rng(Math.round(vw/40)+7);
+    traces=[];
+    for(var i=0;i<n;i++){
+      var x=r()*vw,y=r()*worldH,d=Math.floor(r()*8),segs=3+Math.floor(r()*4),pts=[[x,y]],cum=[0],tot=0,ymin=y,ymax=y;
+      for(var s=0;s<segs;s++){
+        var L=45+r()*105;
+        if(s>0){var q=r();d=(d+(q<.55?(q<.275?1:7):0))%8;}
+        var nx=x+DIRS[d][0]*L,ny=y+DIRS[d][1]*L;
+        tot+=Math.hypot(nx-x,ny-y);x=nx;y=ny;pts.push([x,y]);cum.push(tot);
+        if(y<ymin)ymin=y;if(y>ymax)ymax=y;
+      }
+      traces.push({pts:pts,cum:cum,tot:tot,cy:(ymin+ymax)/2,ymin:ymin,ymax:ymax,jn:r()<.5});
+    }
+    dirty=true;
+  }
+  function clamp(v){return v<0?0:v>1?1:v;}
+  function draw(){
+    dirty=false;ctx.clearRect(0,0,vw,vh);
+    var oy=-(window.scrollY||0)*P;
+    ctx.lineJoin='round';ctx.lineCap='round';
+    for(var i=0;i<traces.length;i++){
+      var t=traces[i];
+      if(t.ymax+oy<-30||t.ymin+oy>vh+30)continue;
+      var sy=t.cy+oy,prog=reduce?1:clamp((vh*0.95-sy)/(vh*0.5)),fade=clamp(sy/(vh*0.18)+0.15);
+      if(prog<=0||fade<=0)continue;
+      var len=t.tot*prog,a=fade;
+      ctx.strokeStyle='rgba(52,211,110,'+(0.42*a).toFixed(3)+')';ctx.lineWidth=1.5;
+      ctx.beginPath();ctx.moveTo(t.pts[0][0],t.pts[0][1]+oy);
+      var hx=t.pts[0][0],hy=t.pts[0][1]+oy;
+      for(var k=1;k<t.pts.length;k++){
+        var a0=t.pts[k-1],a1=t.pts[k];
+        if(t.cum[k]<=len){ctx.lineTo(a1[0],a1[1]+oy);hx=a1[0];hy=a1[1]+oy;}
+        else{var f=(len-t.cum[k-1])/(t.cum[k]-t.cum[k-1]);if(f>0){hx=a0[0]+(a1[0]-a0[0])*f;hy=a0[1]+(a1[1]-a0[1])*f+oy;ctx.lineTo(hx,hy);}break;}
+      }
+      ctx.stroke();
+      ctx.fillStyle='rgba(52,211,110,'+(0.8*a).toFixed(3)+')';
+      ctx.beginPath();ctx.arc(t.pts[0][0],t.pts[0][1]+oy,2.5,0,6.283);ctx.fill();
+      if(t.jn&&prog>=0.5&&t.pts.length>3){ctx.beginPath();ctx.arc(t.pts[2][0],t.pts[2][1]+oy,2.5,0,6.283);ctx.fill();}
+      if(prog>=0.999){
+        var e=t.pts[t.pts.length-1];
+        ctx.beginPath();ctx.arc(e[0],e[1]+oy,4,0,6.283);ctx.fill();
+        ctx.strokeStyle='rgba(52,211,110,'+(0.35*a).toFixed(3)+')';ctx.beginPath();ctx.arc(e[0],e[1]+oy,8,0,6.283);ctx.stroke();
+      }else{
+        var g=ctx.createRadialGradient(hx,hy,0,hx,hy,11);
+        g.addColorStop(0,'rgba(120,255,170,'+(0.95*a).toFixed(3)+')');g.addColorStop(1,'rgba(52,211,110,0)');
+        ctx.fillStyle=g;ctx.beginPath();ctx.arc(hx,hy,11,0,6.283);ctx.fill();
+      }
+    }
+  }
+  function loop(){if(dirty)draw();requestAnimationFrame(loop);}
+  window.addEventListener('scroll',function(){dirty=true;},{passive:true});
+  window.addEventListener('resize',build);window.addEventListener('load',function(){setTimeout(build,150);});
+  build();requestAnimationFrame(loop);
+})();
+</script>
+<script>
+(function(){
+  var nav=document.querySelector('nav'),links=[].slice.call(document.querySelectorAll('nav .wrap a')),nb=document.querySelector('nav b'),h1=document.querySelector('header.hero h1'),av=document.querySelector('.avatar'),busy=false;
+  if(!nb||!h1)return;
+  function cl(v){return v<0?0:v>1?1:v;}
+  function upd(){
+    busy=false;
+    var y=window.scrollY||0,r=h1.getBoundingClientRect(),
+        p=cl((72-r.top)/(72-(36-r.height)));
+    nav.style.opacity=p.toFixed(3);nav.style.visibility=p<=0?'hidden':'visible';
+    nav.style.transform='translateY('+((1-p)*-18).toFixed(1)+'px)';nav.style.pointerEvents=p>0.2?'auto':'none';
+    links.forEach(function(a,i){var k=cl(p*1.5-i*0.1);a.style.opacity=k.toFixed(3);a.style.transform='translateX('+((1-k)*-46).toFixed(1)+'px)';});
+    nb.style.opacity=p.toFixed(3);nb.style.transform='translateY('+((1-p)*12).toFixed(1)+'px)';
+    h1.style.opacity=(1-cl(p*1.15)).toFixed(3);h1.style.transform='translateY('+(-p*6).toFixed(1)+'px) scale('+(1-p*0.06).toFixed(3)+')';
+    h1.style.transformOrigin='left center';
+    if(av){var q=cl((y-40)/220);av.style.opacity=(1-q).toFixed(3);av.style.transform='scale('+(1-q*0.14).toFixed(3)+')';av.style.filter=q>0?'blur('+(q*3).toFixed(1)+'px)':'none';}
+  }
+  function req(){if(!busy){busy=true;requestAnimationFrame(upd);}}
+  window.addEventListener('scroll',req,{passive:true});window.addEventListener('resize',req);
+  upd();
+})();
+</script>
+</body>
+</html>
